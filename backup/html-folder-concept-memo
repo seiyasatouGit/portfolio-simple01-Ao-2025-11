@@ -1,0 +1,16 @@
+html-folder-concept-memo
+
+portfolio/
+├─ index.html          ← 現行実働ファイル
+├─ style.css
+├─ script.js
+├─ assets/
+│   └─ works/...
+├─ _backup/
+│   ├─ 2025-11-01_initial/
+│   │   ├─ index.html
+│   │   ├─ style.css
+│   │   └─ memo.txt
+│   └─ 2025-11-03_layout-test/
+│       └─ index.html
+└─ .git/               ← Gitの履歴管理用フォルダ（自動生成）

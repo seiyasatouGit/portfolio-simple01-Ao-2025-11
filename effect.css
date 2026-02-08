@@ -1,0 +1,10 @@
+/*  */
+.glow-text {
+    font-size: 24px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        hsl(var(--hue), 60% 40%)
+    );
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>メール誤送信チェックツール</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="img/s.png">
+    <link rel="stylesheet" href="mail.css">
+</head>
+<body>
+    <div class="mail-check">
+        <h1 class="mail-check__title">メール誤送信チェックツール</h1>
+
+    </div>
+
+    <div class="mail-check__field">
+        <label class="mail-check__label">宛先(To)
+            <input type="text"
+            id="to"
+            class="mail-check__input"
+            placeholder="example@company.co.jp">
+        </label>
+    </div>
+
+        <div class="mail-check__field">
+        <label class="mail-check__label">件名</label><br>
+            <input type="text"
+            id="subject"
+            class="mail-check__input">
+        
+    </div>
+
+    <div class="mail-check__field">
+        <label class="mail-check__label">本文</label><br>
+            <textarea type="text"
+            id="body"
+            class="mail-check__input"
+            class="mail-check__textarea"
+            row="6">
+            </textarea>
+    </div>
+
+    <div class="mail-check__field">
+        <label class="mail-check__label">宛先(To)
+            <input type="text"
+            id="atatachment"
+            class="mail-check__input"
+            placeholder="resume.pdf">
+        </label>
+    </div>
+
+    <button id="checkbtn" class="mail-check__button">送信前チェック</button>
+
+    <div
+        id="result" class="mail-check__result">
+    </div>
+
+    <script src="mail.js"></script>
+</body>
+</html>
