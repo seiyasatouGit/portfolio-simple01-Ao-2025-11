@@ -1,0 +1,151 @@
+/* ========= 基本 ========= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* ========= テーマ ========= */
+
+.theme--dark {
+  background: #111;
+  color: #eee;
+}
+
+.theme--dark .phone__screen {
+  background: #1e1e1e;
+}
+
+.theme--dark .state {
+  background: #333;
+}
+
+/* ========= レイアウト ========= */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* デスクトップ拡張 */
+@media (min-width: 900px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .layout__left,
+  .layout__right {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .layout__center {
+    flex: 0 0 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ========= スマホ枠 ========= */
+
+.phone {
+  width: 360px;
+  height: 720px;
+  border: 12px solid #111;
+  border-radius: 40px;
+  padding: 20px;
+  background: black;
+  margin: 40px auto;
+}
+
+.phone__screen {
+  background: white;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* ========= アプリ内部 ========= */
+
+.app__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.state {
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #e3f2fd;
+}
+
+.state--logged_in {
+  background: #c8e6c9;
+}
+
+.state--error {
+  background: #ffcdd2;
+}
+
+.state__label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.state__value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button--primary {
+  background: #4caf50;
+  color: white;
+}
+
+.button--danger {
+  background: #f44336;
+  color: white;
+}
+
+.button--warning {
+  background: #ff9800;
+  color: white;
+}
+
+.button--secondary {
+  background: #607d8b;
+  color: white;
+}
+
+.log {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 12px;
+}

@@ -92,6 +92,24 @@ h1 {
   margin:0 auto;
 }
 
+.work-item_link {
+  /* text-align: center; */
+  margin-bottom: 1.5rem;
+  color: #F4F4F4;
+  text-decoration: none;
+
+  flex: 0 0 auto;
+  width: 260px;
+  /* background: #142c47; */
+  border-radius: 1rem;
+  padding: 1rem;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+
+  margin:0 auto;
+}
+
 .work-item:hover {
   transform: scale(1.05);
   background: #1d3a5c;

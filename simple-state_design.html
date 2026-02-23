@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>State Design 2026.02</title>
+  <link rel="stylesheet" href="simple-state_design.css" />
+</head>
+
+<body class="theme theme--light">
+
+  <div class="layout">
+
+    <!-- 左カラム -->
+    <aside class="layout__left">
+      <h2 class="panel__title">State Design</h2>
+      <p class="panel__text">
+        状態とイベントによる遷移設計デモ
+      </p>
+      <button id="themeToggle" class="button button--secondary">
+        Toggle Theme
+      </button>
+    </aside>
+
+    <!-- 中央 -->
+    <main class="layout__center">
+      <div class="phone">
+        <div class="phone__screen">
+
+          <div class="app">
+
+            <h1 class="app__title">Login State</h1>
+
+            <div id="stateBox" class="state state--logged_out">
+              <span class="state__label">Current State</span>
+              <span id="currentState" class="state__value">
+                logged_out
+              </span>
+            </div>
+
+            <div class="actions">
+              <button id="loginBtn" class="button button--primary">
+                Login
+              </button>
+              <button id="logoutBtn" class="button button--danger">
+                Logout
+              </button>
+              <button id="errorBtn" class="button button--warning">
+                Error
+              </button>
+            </div>
+
+            <ul id="logList" class="log"></ul>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- 右カラム -->
+    <aside class="layout__right">
+      <h3>Future Panel</h3>
+      <p>状態図やJSON定義表示予定</p>
+    </aside>
+
+  </div>
+
+  <script src="simple-state_design.js"></script>
+</body>
+</html>
