@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  background-color: #0b1c2e;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #10243b;
+}
+
+/* .mail-article {
+    background-color: #0b1c2e;
+
+} */
+
+.mail-check {
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: sans-serif;
+    
+}
+
+.mail-check__field {
+    margin-bottom: 16px;
+}
+
+.mail-check__lebel {
+    font-weight: bold;
+}
+
+.mail-check__input,
+.mail-check__textarea {
+    width: 100%;
+    padding: 6px;
+}
+
+.mail-check__button {
+    padding: 8px 16px;
+cursor: pointer;
+}
+
+.mail-check__result {
+    margin-top: 20px;
+}

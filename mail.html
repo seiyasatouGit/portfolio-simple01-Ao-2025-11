@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="mail.css">
 </head>
 <body>
+
+      <header>
+    <h1>Portfolio-mail</h1>
+  </header>
+
+    <!-- <article class="mail-article"> -->
+
     <div class="mail-check">
         <h1 class="mail-check__title">メール誤送信チェックツール</h1>
 
-    </div>
+    
 
     <div class="mail-check__field">
-        <label class="mail-check__label">宛先(To)
+        <label class="mail-check__label">宛先(To)</label><br>
+
             <input type="text"
             id="to"
             class="mail-check__input"
             placeholder="example@company.co.jp">
-        </label>
     </div>
 
         <div class="mail-check__field">
@@ -34,7 +41,7 @@
 
     <div class="mail-check__field">
         <label class="mail-check__label">本文</label><br>
-            <textarea type="text"
+            <textarea
             id="body"
             class="mail-check__input"
             class="mail-check__textarea"
@@ -43,21 +50,22 @@
     </div>
 
     <div class="mail-check__field">
-        <label class="mail-check__label">宛先(To)
+        <label class="mail-check__label">添付ファイル名</label><br>
             <input type="text"
-            id="atatachment"
+            id="attachment"
             class="mail-check__input"
             placeholder="resume.pdf">
-        </label>
+        
     </div>
-
-    <button id="checkbtn" class="mail-check__button">送信前チェック</button>
+    
+    <button id="checkBtn" class="mail-check__button">送信前チェック</button>
 
     <div
         id="result" class="mail-check__result">
     </div>
 
     </div>
+    <!-- </article> -->
     <script src="mail.js"></script>
 </body>
 </html>
