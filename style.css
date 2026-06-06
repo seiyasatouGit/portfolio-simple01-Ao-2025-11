@@ -46,13 +46,6 @@ h1 {
   max-width: 500px;
 }
 
-.color-palette {
-  width: 240px;
-  height: 240px;
-  margin: auto;
-  color: #7FFFD4;
-  /* border: #7FFFD4 3px solid; */
-}
 
 .works {
   padding: 2rem;
